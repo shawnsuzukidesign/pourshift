@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Join as a Venue, PourShift</title>
+  <meta name="description" content="Browse verified bartenders and barbacks, watch pour videos, and hire on your own terms in the San Francisco Bay Area.">
+  <meta name="theme-color" content="#0e0c0a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e0c0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-weight='700' fill='%23d4a87a'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="./" class="brand">PourShift</a>
+      <nav class="nav">
+        <div class="nav-cta">
+          <a class="btn btn-primary" href="./bartender.html">Join as a Bartender</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="signup-hero">
+      <div class="container-narrow">
+        <a href="./" class="back-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Back to home
+        </a>
+        <h1>Join as a Venue</h1>
+        <p>
+          Browse verified bartenders and barbacks, watch pour videos, and hire
+          on your own terms. Start free with pay-as-you-go or subscribe
+          for unlimited video access and included invites.
+        </p>
+
+        <!-- ============================== FORM ============================== -->
+        <form class="form-card" data-signup-type="venue" novalidate autocomplete="on">
+          <h2>Get Early Access</h2>
+          <p>
+            PourShift is launching across the San Francisco Bay Area.
+            Venues pay one flat fee of $50 per invite and $200 total
+            per hire. No subscription required, no agency markup. Early
+            venues get first access to verified bartenders and a direct
+            line on the features and certifications we add next. Join
+            the waitlist to claim your spot.
+          </p>
+
+          <div class="hp-field" aria-hidden="true">
+            <label>Company website (leave blank)
+              <input type="text" name="company_website" tabindex="-1" autocomplete="off">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-name">Your Name</label>
+            <input class="input" id="vn-name" name="name" type="text"
+                   required maxlength="120" autocomplete="name">
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-email">Work Email</label>
+            <input class="input" id="vn-email" name="email" type="email"
+                   required maxlength="254" autocomplete="email" inputmode="email">
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-phone">Phone (optional)</label>
+            <input class="input" id="vn-phone" name="phone" type="tel"
+                   maxlength="32" autocomplete="tel" inputmode="tel">
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-vname">Venue Name</label>
+            <input class="input" id="vn-vname" name="venue_name" type="text"
+                   required maxlength="160" autocomplete="organization">
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-vtype">Venue Type</label>
+            <select class="select" id="vn-vtype" name="venue_type" required>
+              <option value="" selected disabled>Select venue type</option>
+              <option>Cocktail bar</option>
+              <option>Restaurant</option>
+              <option>Hotel bar</option>
+              <option>Nightclub</option>
+              <option>Brewery / Taproom</option>
+              <option>Winery / Wine bar</option>
+              <option>Event venue / Catering</option>
+              <option>Other</option>
+            </select>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vn-city">City</label>
+              <input class="input" id="vn-city" name="city" type="text"
+                     required maxlength="120" placeholder="San Francisco, Oakland, etc.">
+              <div class="field-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="vn-state">State / Province</label>
+              <input class="input" id="vn-state" name="state" type="text"
+                     required maxlength="80" placeholder="CA" autocomplete="address-level1">
+              <div class="field-error"></div>
+            </div>
+          </div>
+
+          <div class="form-group" data-group="roles_hiring_for">
+            <span class="group-label">Roles you're hiring for</span>
+            <span class="help">Select all that apply</span>
+            <div class="check-group">
+              <label class="check"><input type="checkbox" name="roles_hiring_for" value="Bartender">Bartender</label>
+              <label class="check"><input type="checkbox" name="roles_hiring_for" value="Head Bartender">Head Bartender</label>
+              <label class="check"><input type="checkbox" name="roles_hiring_for" value="Barback">Barback</label>
+              <label class="check"><input type="checkbox" name="roles_hiring_for" value="Server / Bartender">Server / Bartender</label>
+              <label class="check"><input type="checkbox" name="roles_hiring_for" value="Mixologist">Mixologist</label>
+              <label class="check" data-toggles="#vn-roles-other-wrap"><input type="checkbox" name="roles_hiring_for" value="Other" data-other-toggle>Other</label>
+            </div>
+            <div id="vn-roles-other-wrap" class="other-input-wrap" hidden>
+              <label for="vn-roles-other" class="help">Tell us what other role(s)</label>
+              <input class="input" id="vn-roles-other" name="roles_hiring_for_other" type="text"
+                     maxlength="200" placeholder="e.g. Sommelier, Floor Manager">
+            </div>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-timeline">Hiring Timeline</label>
+            <select class="select" id="vn-timeline" name="hiring_timeline" required>
+              <option value="" selected disabled>Select timeline</option>
+              <option>Immediately</option>
+              <option>Within 2 weeks</option>
+              <option>Within 1 month</option>
+              <option>Within 3 months</option>
+              <option>Just exploring</option>
+            </select>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-fee">Would you pay $50 to invite a pre-screened bartender to interview, credited toward hire fee if hired?</label>
+            <select class="select" id="vn-fee" name="would_pay_invite_fee" required>
+              <option value="" selected disabled>Select an answer</option>
+              <option>Yes</option>
+              <option>Maybe, depends on profile quality</option>
+              <option>No</option>
+            </select>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-tier">Preferred subscription tier</label>
+            <select class="select" id="vn-tier" name="preferred_subscription_tier" required>
+              <option value="" selected disabled>Select a tier</option>
+              <option value="Free / Pay as you go">Free / Pay as you go, browse + 1 free video per worker, $15 to unlock more</option>
+              <option value="Standard, $20/mo">Standard ($20/mo), unlimited videos, full cert details, post job listings, 3 invites/mo included</option>
+              <option value="Pro, $50/mo">Pro ($50/mo), all Standard features, post job listings, 10 invites/mo, custom pour video requests, shortlists, priority support</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-cur-cost">What do you typically pay to hire a bartender today?</label>
+            <select class="select" id="vn-cur-cost" name="current_hiring_cost" required>
+              <option value="" selected disabled>Select an option</option>
+              <option value="Nothing, word of mouth or walk-ins">Nothing, word of mouth or walk-ins</option>
+              <option value="Under $100, job board posting">Under $100, job board posting</option>
+              <option value="$100 to $500, job boards + screening time">$100 to $500, job boards + screening time</option>
+              <option value="$500 to $2,000, paid sourcing or trial shifts">$500 to $2,000, paid sourcing or trial shifts</option>
+              <option value="$2,000 to $5,000, staffing agency placement">$2,000 to $5,000, staffing agency placement</option>
+              <option value="Over $5,000, full staffing agency fee">Over $5,000, full staffing agency fee</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-fair-fee">What feels fair for a flat hire fee on a verified, certified bartender?</label>
+            <select class="select" id="vn-fair-fee" name="fair_hire_fee" required>
+              <option value="" selected disabled>Select an option</option>
+              <option value="Under $200">Under $200</option>
+              <option value="$200 to $349">$200 to $349</option>
+              <option value="$350 to $499">$350 to $499</option>
+              <option value="$500 to $749">$500 to $749</option>
+              <option value="$750 to $999">$750 to $999</option>
+              <option value="$1,000+">$1,000+</option>
+              <option value="Depends on the role">Depends on the role</option>
+            </select>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="vn-frust">Biggest frustration hiring bartenders right now?</label>
+            <textarea class="textarea" id="vn-frust" name="biggest_hiring_frustration"
+                      maxlength="2000" placeholder="Tell us what makes hiring difficult..."></textarea>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="submit-row">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">
+              Join the Venue Waitlist
+            </button>
+          </div>
+
+          <div class="form-msg" role="status" aria-live="polite"></div>
+
+          <p class="muted" style="margin-top: 14px; font-size: .78rem;">
+            By submitting you agree to our
+            <a href="./terms.html" style="color: var(--text-muted); text-decoration: underline;">Terms</a> and
+            <a href="./privacy.html" style="color: var(--text-muted); text-decoration: underline;">Privacy Policy</a>.
+          </p>
+        </form>
+        <!-- ============================ /FORM ============================== -->
+
+        <div class="info-card">
+          <h3>What happens next?</h3>
+          <ol>
+            <li>We'll email you when early access opens in your area</li>
+            <li>You'll browse verified bartender and barback profiles</li>
+            <li>Watch pour videos and check certification status before reaching out</li>
+            <li>Pay a small invite fee to contact candidates, credited toward hire fee</li>
+          </ol>
+        </div>
+
+        <div class="info-card bonus">
+          <h3>Flat Hire Fee</h3>
+          <p>
+            <span class="accent">$50</span> invite to stage/interview -
+            <span class="accent">$200</span> total hire fee ($150 due at hire).
+            Invite fee is credited toward hire fee if you bring the worker on.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand-block">
+        <span class="brand">PourShift</span>
+        <p>Verified hospitality hiring. Bay Area first.</p>
+      </div>
+      <div class="links">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/config.js"></script>
+  <script src="./js/form.js"></script>
+</body>
+</html>

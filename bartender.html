@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Join as a Bartender or Barback, PourShift</title>
+  <meta name="description" content="Build your bartender profile, upload certifications, and record pour videos. Get discovered by Bay Area venues looking to hire.">
+  <meta name="theme-color" content="#0e0c0a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e0c0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-weight='700' fill='%23d4a87a'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="./" class="brand">PourShift</a>
+      <nav class="nav">
+        <div class="nav-cta">
+          <a class="btn btn-outline" href="./venue.html">Join as a Venue</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="signup-hero">
+      <div class="container-narrow">
+        <a href="./" class="back-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Back to home
+        </a>
+        <h1>Join as a Bartender or Barback</h1>
+        <p>
+          Build your profile, upload certifications, and record pour videos.
+          Get discovered by Bay Area venues looking to hire. Earn a $75 bonus
+          for each of your first 4 hires.
+        </p>
+
+        <!-- ============================== FORM ============================== -->
+        <form class="form-card" data-signup-type="bartender" novalidate autocomplete="on">
+          <h2>Get Early Access</h2>
+          <p>
+            PourShift is launching across the San Francisco Bay Area.
+            Early bartenders get first access to venues that are
+            actively hiring, a $75 bonus on each of your first four
+            hires through the platform, and the option to add a
+            cert-priority badge that boosts you in venue search.
+            Join the waitlist to claim your spot.
+          </p>
+
+          <!-- Honeypot, bots fill every input. Real users never see this. -->
+          <div class="hp-field" aria-hidden="true">
+            <label>Company website (leave blank)
+              <input type="text" name="company_website" tabindex="-1" autocomplete="off">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="bt-name">Name</label>
+            <input class="input" id="bt-name" name="name" type="text"
+                   required maxlength="120" autocomplete="name">
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="bt-email">Email</label>
+            <input class="input" id="bt-email" name="email" type="email"
+                   required maxlength="254" autocomplete="email" inputmode="email">
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="bt-phone">Phone (optional)</label>
+            <input class="input" id="bt-phone" name="phone" type="tel"
+                   maxlength="32" autocomplete="tel" inputmode="tel">
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bt-city">City</label>
+              <input class="input" id="bt-city" name="city" type="text"
+                     required maxlength="120" placeholder="San Francisco, Oakland, etc.">
+              <div class="field-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="bt-state">State / Province</label>
+              <input class="input" id="bt-state" name="state" type="text"
+                     required maxlength="80" placeholder="CA" autocomplete="address-level1">
+              <div class="field-error"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bt-role">Primary Role</label>
+            <select class="select" id="bt-role" name="primary_role" required>
+              <option value="" selected disabled>Select a role</option>
+              <option>Bartender</option>
+              <option>Head Bartender</option>
+              <option>Barback</option>
+              <option>Server/Bartender</option>
+              <option>Mixologist</option>
+            </select>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="bt-years">Years of Experience</label>
+            <select class="select" id="bt-years" name="years_experience" required>
+              <option value="" selected disabled>Select experience</option>
+              <option>Less than 1 year</option>
+              <option>1-2 years</option>
+              <option>3-5 years</option>
+              <option>6-10 years</option>
+              <option>10+ years</option>
+            </select>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group" data-group="current_work_sources">
+            <span class="group-label">How do you currently find work?</span>
+            <span class="help">Select all that apply</span>
+            <div class="check-group">
+              <label class="check"><input type="checkbox" name="current_work_sources" value="Word of mouth / referrals">Word of mouth / referrals</label>
+              <label class="check"><input type="checkbox" name="current_work_sources" value="Staffing agency">Staffing agency</label>
+              <label class="check"><input type="checkbox" name="current_work_sources" value="Instagram / social media">Instagram / social media</label>
+              <label class="check"><input type="checkbox" name="current_work_sources" value="Indeed / job boards">Indeed / job boards</label>
+              <label class="check"><input type="checkbox" name="current_work_sources" value="Direct applications to venues">Direct applications to venues</label>
+              <label class="check"><input type="checkbox" name="current_work_sources" value="Other">Other</label>
+            </div>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group" data-group="worker_needs">
+            <span class="group-label">What would make finding bartending work easier for you?</span>
+            <span class="help">Select all that apply</span>
+            <div class="check-group">
+              <label class="check"><input type="checkbox" name="worker_needs" value="Show skills without tryout shift">A way to show my skills without a tryout shift</label>
+              <label class="check"><input type="checkbox" name="worker_needs" value="Serious venues, not browsers">Venues that are serious about hiring, not just browsing</label>
+              <label class="check"><input type="checkbox" name="worker_needs" value="Know pay rate before applying">Knowing the pay rate before I apply</label>
+              <label class="check"><input type="checkbox" name="worker_needs" value="No staffing agency">Not having to go through a staffing agency</label>
+              <label class="check"><input type="checkbox" name="worker_needs" value="Set my own schedule/availability">Being able to set my own schedule or availability</label>
+              <label class="check"><input type="checkbox" name="worker_needs" value="Recognition for certifications">Getting recognized for my certifications</label>
+              <label class="check"><input type="checkbox" name="worker_needs" value="Something else">Something else</label>
+            </div>
+            <div class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="bt-resume">Instagram or Resume Link (optional)</label>
+            <input class="input" id="bt-resume" name="resume_url" type="url"
+                   maxlength="500" placeholder="https://" inputmode="url">
+            <div class="field-error"></div>
+          </div>
+
+          <div class="submit-row">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">
+              Join the Bartender Waitlist
+            </button>
+          </div>
+
+          <div class="form-msg" role="status" aria-live="polite"></div>
+
+          <p class="muted" style="margin-top: 14px; font-size: .78rem;">
+            By submitting you agree to our
+            <a href="./terms.html" style="color: var(--text-muted); text-decoration: underline;">Terms</a> and
+            <a href="./privacy.html" style="color: var(--text-muted); text-decoration: underline;">Privacy Policy</a>.
+          </p>
+        </form>
+        <!-- ============================ /FORM ============================== -->
+
+        <div class="info-card">
+          <h3>What happens next?</h3>
+          <ol>
+            <li>We'll email you when early access opens in your area</li>
+            <li>You'll build your profile, upload certs, and record pour videos</li>
+            <li>Venues will find you and send interview invites</li>
+            <li>You're hired directly by the venue, PourShift never employs you</li>
+          </ol>
+        </div>
+
+        <div class="info-card bonus">
+          <h3>Hire Bonus</h3>
+          <p>
+            Earn a <span class="accent">$75 bonus</span> for each of your first
+            4 hires through PourShift. Free to join, free to use.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand-block">
+        <span class="brand">PourShift</span>
+        <p>Verified hospitality hiring. Bay Area first.</p>
+      </div>
+      <div class="links">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Config first, then form handler -->
+  <script src="./js/config.js"></script>
+  <script src="./js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're on the PourShift venue waitlist</title>
+  <style>
+    @media only screen and (max-width: 480px) {
+      .container { width: 100% !important; padding: 0 16px !important; }
+      .hero      { padding: 32px 24px !important; }
+      .body-pad  { padding: 24px !important; }
+      h1         { font-size: 26px !important; line-height: 1.2 !important; }
+    }
+  </style>
+</head>
+<body style="margin:0;padding:0;background:#f6f3ee;font-family:'Lato',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#1a1006;-webkit-font-smoothing:antialiased;">
+
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#f6f3ee;">
+    {{VENUE_NAME}} is on the PourShift venue waitlist. Here's what happens next.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f6f3ee;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+
+        <table role="presentation" class="container" width="560" cellpadding="0" cellspacing="0" border="0"
+               style="width:560px;max-width:560px;background:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 1px 4px rgba(26,16,6,0.06);">
+
+          <!-- Hero -->
+          <tr>
+            <td class="hero" align="left" style="background:#0e0c0a;padding:44px 48px;">
+              <div style="font-family:'Lora',Georgia,'Times New Roman',serif;color:#d4a87a;font-size:18px;font-weight:600;letter-spacing:0.2px;margin-bottom:24px;">
+                PourShift
+              </div>
+              <h1 style="font-family:'Lora',Georgia,'Times New Roman',serif;color:#ffffff;font-size:30px;line-height:1.25;font-weight:700;margin:0;">
+                {{VENUE_NAME}} is<br>on the list.
+              </h1>
+              <p style="font-family:'Lato',-apple-system,sans-serif;color:#c8b9a3;font-size:15px;line-height:1.5;margin:14px 0 0;">
+                Thanks {{NAME}}, we'll have you hiring verified bartenders soon.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td class="body-pad" style="padding:36px 48px;">
+
+              <p style="font-family:'Lato',sans-serif;color:#1a1006;font-size:16px;line-height:1.6;margin:0 0 16px;">
+                We're launching PourShift in the Bay Area first, and venues on this list get early access before anyone else. That means a head start finding bartenders who've already proven they can pour.
+              </p>
+
+              <p style="font-family:'Lato',sans-serif;color:#1a1006;font-size:16px;line-height:1.6;margin:0 0 28px;">
+                Here's what you'll be able to do at launch:
+              </p>
+
+              <!-- Bullets -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 28px;">
+                <tr>
+                  <td valign="top" width="32" style="padding:0 12px 16px 0;">
+                    <div style="font-family:'Lora',Georgia,serif;color:#d4a87a;font-size:20px;line-height:1;">→</div>
+                  </td>
+                  <td valign="top" style="padding:0 0 16px 0;">
+                    <div style="font-family:'Lora',Georgia,serif;font-size:16px;color:#1a1006;font-weight:600;margin-bottom:4px;">Watch pour videos before you commit</div>
+                    <div style="font-family:'Lato',sans-serif;font-size:14px;color:#5a4a3a;line-height:1.5;">See real technique and speed. No more tryout shifts that waste a Friday night.</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top" width="32" style="padding:0 12px 16px 0;">
+                    <div style="font-family:'Lora',Georgia,serif;color:#d4a87a;font-size:20px;line-height:1;">→</div>
+                  </td>
+                  <td valign="top" style="padding:0 0 16px 0;">
+                    <div style="font-family:'Lora',Georgia,serif;font-size:16px;color:#1a1006;font-weight:600;margin-bottom:4px;">Verified certifications, on the profile</div>
+                    <div style="font-family:'Lato',sans-serif;font-size:14px;color:#5a4a3a;line-height:1.5;">RBS, ServSafe, and food handler cards confirmed by us, not self-reported.</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top" width="32" style="padding:0 12px 0 0;">
+                    <div style="font-family:'Lora',Georgia,serif;color:#d4a87a;font-size:20px;line-height:1;">→</div>
+                  </td>
+                  <td valign="top">
+                    <div style="font-family:'Lora',Georgia,serif;font-size:16px;color:#1a1006;font-weight:600;margin-bottom:4px;">Pay only when you're serious</div>
+                    <div style="font-family:'Lato',sans-serif;font-size:14px;color:#5a4a3a;line-height:1.5;">Browse free. $50 to invite a bartender to interview, credited back if you hire. Subscribe for included invites and unlimited pour video access.</div>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Callout: their preferred tier -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#faf6ef;border:1px solid #ece4d6;border-radius:10px;margin:0 0 24px;">
+                <tr>
+                  <td style="padding:18px 22px;">
+                    <div style="font-family:'Lato',sans-serif;font-size:12px;color:#8a7867;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:4px;">You said you're interested in</div>
+                    <div style="font-family:'Lora',Georgia,serif;font-size:17px;color:#1a1006;font-weight:600;">{{PREFERRED_TIER}}</div>
+                    <div style="font-family:'Lato',sans-serif;font-size:13px;color:#5a4a3a;margin-top:6px;line-height:1.5;">We'll confirm exact pricing and lock it in for early-access venues before launch.</div>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Divider -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td style="border-top:1px solid #ece4d6;height:1px;font-size:0;line-height:0;">&nbsp;</td></tr>
+              </table>
+
+              <p style="font-family:'Lato',sans-serif;color:#5a4a3a;font-size:14px;line-height:1.6;margin:24px 0 0;">
+                Want to tell us more about what you're hiring for, or chat about how PourShift fits your venue? Just reply to this email. We'd love to hear from you before launch.
+              </p>
+
+              <p style="font-family:'Lora',Georgia,serif;color:#1a1006;font-size:16px;line-height:1.6;margin:24px 0 0;">
+                The PourShift team
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background:#faf6ef;padding:24px 48px;border-top:1px solid #ece4d6;">
+              <p style="font-family:'Lato',sans-serif;color:#8a7867;font-size:12px;line-height:1.6;margin:0;">
+                You're receiving this because you signed up for the PourShift venue waitlist with this email address.
+                If that wasn't you, just ignore this message, no further emails will be sent.
+              </p>
+              <p style="font-family:'Lato',sans-serif;color:#8a7867;font-size:12px;line-height:1.6;margin:8px 0 0;">
+                PourShift · San Francisco, CA · <a href="mailto:support@pourshift.com" style="color:#8a7867;text-decoration:underline;">support@pourshift.com</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
